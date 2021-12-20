@@ -19,15 +19,15 @@ apis.then((res)=>{return res.json()})
             var Addrow = document.getElementById("mytable")
             var newrow = Addrow.insertRow(n)
         
-             row1[x] = document.getElementById("fstname").value;
-             row2[x] = document.getElementById("lstname").value;
+             r1[x] = document.getElementById("fstname").value;
+             r2[x] = document.getElementById("lstname").value;
             
             var cell1= newrow.insertCell(0)
             var cell2= newrow.insertCell(1)
             
         
-                cell1.innerHTML = row1[x];
-                cell2.innerHTML = row2[x];
+                cell1.innerHTML = r1[x];
+                cell2.innerHTML = r2[x];
                
 
              
@@ -35,7 +35,7 @@ apis.then((res)=>{return res.json()})
                 x++;
         
         }
-        get()
+        add()
         
         
 
